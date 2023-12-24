@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1018309624145",
+    "project_id": "cntt196-hotrodulich",
+    "storage_bucket": "cntt196-hotrodulich.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1018309624145:android:c2af0d1f2691613fe89370",
+        "android_client_info": {
+          "package_name": "com.example.cntt196_hotrodulichfirebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1018309624145-l1tpg3rlq8q90nuvdgiuajecesc1b0l1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBlHvhwZ1Rjuu3ww2apTEDgb1VTS7Onrrg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1018309624145-l1tpg3rlq8q90nuvdgiuajecesc1b0l1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

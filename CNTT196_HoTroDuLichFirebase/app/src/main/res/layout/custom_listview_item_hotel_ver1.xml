@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:weightSum="5">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                app:cardCornerRadius="20dp">
+                <ImageView
+                    android:id="@+id/imgNguoiDung_hotel_custom"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/background_avarta"
+                   android:src="@drawable/icon2" />
+                <!--            android:background="@drawable/background_avarta"-->
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvTenNguoiDung_hotel_custom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:text="Ten nguoi dung"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvNgayDang_hotel_custom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ngay dang"
+                    android:textSize="15dp"
+                    android:layout_marginTop="-35dp"/>
+            </LinearLayout>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tvTieuDe_hotel_custom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tieu de"
+            android:textSize="18dp"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="230dp">
+
+            <ImageView
+                android:id="@+id/imgHotel_hotel_custom"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+<!--            android:background="@drawable/background_hotel_ver1"-->
+
+            <LinearLayout
+                android:id="@+id/linearLayout_hotel_custom"
+                android:layout_gravity="right|bottom"
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="5"
+                android:layout_margin="15dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:orientation="vertical"
+                    android:paddingLeft="5dp"
+                    android:paddingBottom="2dp"
+                    android:background="@drawable/background_hotel_detail">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="9">
+                        <ImageView
+                            android:id="@+id/imageView6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/baseline_tips_and_updates_24" />
+                        <TextView
+                            android:id="@+id/tvMoTa_hotel_custom"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="8"
+                            android:text="mo ta"
+                            android:textSize="16dp"
+                            android:textColor="@color/white"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="9">
+                        <ImageView
+                            android:id="@+id/imageView5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/baseline_location_on_24" />
+
+                        <TextView
+                            android:id="@+id/tvDiaChi_hotel_custom"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="8"
+                            android:text="Dia chi"
+                            android:textSize="16dp"
+                            android:textStyle="bold|italic"
+                            android:textColor="@color/white"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="9">
+                        <ImageView
+                            android:id="@+id/imageView9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/baseline_hotel_class_24" />
+
+                        <TextView
+                            android:id="@+id/tvhotelStar_hotel_custom"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="8"
+                            android:text="Khách sạn 5sao"
+                            android:textSize="16dp"
+                            android:textStyle="bold|italic"
+                            android:textColor="@color/white"/>
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/tvGia_hotel_custom"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Chi phí xem ở chi tiết"
+                        android:textSize="16dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/red"
+                        android:layout_marginLeft="10dp"/>
+
+                    <RatingBar
+                        android:id="@+id/ratingBar_hotel_custom"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="wrap_content"
+                        android:scaleX="1"
+                        android:layout_gravity="left"
+                        android:scaleY="1"
+                        android:layout_height="120px"
+                        android:numStars="5"
+                        android:rating="3"
+                        android:isIndicator="true"
+                        style="@style/Widget.AppCompat.RatingBar.Indicator"
+                        android:backgroundTint="@color/blue_light1"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        </FrameLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:weightSum="9">
+
+
+            <ImageButton
+                android:id="@+id/btnFavorite_hodel_custom"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/baseline_volunteer_activism_24_0"
+                android:scaleType="fitCenter"
+                android:background="@color/white"/>
+
+            <TextView
+                android:id="@+id/tvCountFavorite_hotel_custom"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_weight="6"
+                android:text="duytan va 145+ nguoi khac"
+                android:paddingRight="20dp"
+                android:gravity="left|center"/>
+
+            <Button
+                android:id="@+id/btnXemChiTiet_hotel_custom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Xem chi tiết"
+                android:background="@drawable/backround_button"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

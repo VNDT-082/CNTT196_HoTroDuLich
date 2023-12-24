@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityGetStared">
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager2_getstarted"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <me.relex.circleindicator.CircleIndicator3
+        android:id="@+id/CircleIndicator3_GetStrated"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        app:ci_drawable="@drawable/baseline_brightness_1_24"
+        android:layout_marginBottom="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginBottom="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/btnBoQua_custom_get_stared_item"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="25dp"
+            android:background="@color/blue_light1"
+            android:text="Bõ qua" />
+
+        <Button
+            android:id="@+id/btnNext_custom_get_stared_item"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:background="@color/blue_light1"
+            android:text="Kế tiếp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

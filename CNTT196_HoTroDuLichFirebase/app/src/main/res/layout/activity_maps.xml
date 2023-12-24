@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    tools:context=".MapsActivity" >
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            android:weightSum="10">
+            <ImageButton
+                android:id="@+id/btnBack_Maps"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:layout_gravity="left|top"
+                android:layout_marginLeft="-5dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/baseline_keyboard_backspace_24"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="9"
+                android:weightSum="7"
+                android:gravity="top|center"
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/baseline_location_on_24"
+                    android:layout_gravity="top|center"
+                    android:gravity="center|left"
+                    android:layout_weight="1"
+                    android:textSize="15dp"/>
+
+                <EditText
+                    android:id="@+id/edtDiaChi_Maps"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6"
+                    android:ems="10"
+                    android:inputType="textMultiLine"
+                    android:background="@drawable/boder"
+                    android:layout_gravity="center"
+                    android:hint="Nhập ở đây..."
+                    android:textColorHint="@color/Silver"
+                    android:text="" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        map:cardCornerRadius="5dp"
+        android:layout_gravity="bottom"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="25dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:weightSum="7"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="@color/blue_light1">
+
+            <ImageButton
+                android:id="@+id/btnDinhVi_Maps"
+                android:layout_width="20dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:gravity="center|left"
+                android:layout_weight="1"
+                android:textSize="15dp"
+                android:src="@drawable/baseline_my_location_24"
+                android:background="@android:color/transparent"/>
+
+            <EditText
+                android:id="@+id/edtToaDoCurrent_Maps"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_weight="3"
+                android:ems="10"
+                android:inputType="textMultiLine"
+                android:background="@drawable/boder"
+                android:layout_gravity="center"
+                android:hint="Nhập ở đây..."
+                android:textColorHint="@color/Silver"
+                android:text="" />
+            <ImageButton
+                android:id="@+id/btnChiDuong_Maps"
+                android:layout_width="20dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:gravity="center|left"
+                android:layout_weight="2"
+                android:textSize="15dp"
+                android:src="@drawable/baseline_assistant_direction_24"
+                android:background="@color/blue_light1"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>
+

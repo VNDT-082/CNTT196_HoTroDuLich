@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingRight="10dp"
+    android:paddingLeft="10dp"
+    android:layout_gravity="center">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="10dp"
+        android:foregroundGravity="center"
+        android:background="@color/WhiteSmoke">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    app:cardCornerRadius="25dp">
+                    <ImageView
+                        android:id="@+id/imgNguoiDang_dialog_add_danhgia"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/icon2"
+                        android:layout_gravity="center"/>
+                </androidx.cardview.widget.CardView>
+                <TextView
+                    android:id="@+id/tvTenNguoiDang_dialog_add_danhgia"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="your name"
+                    android:textStyle="bold"
+                    android:textSize="17dp"
+                    android:textColor="@color/red"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginBottom="10dp"/>
+
+                <EditText
+                    android:id="@+id/edtDanhGia_dialog_add_danhgia"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:gravity="start|top"
+                    android:hint="Đánh giá của bạn..."
+                    android:inputType="textMultiLine"
+                    android:background="@drawable/boder"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="5">
+
+                    <TextView
+                        android:id="@+id/textView10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:text="Đánh giá: "
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:gravity="left|center"/>
+                    <RatingBar
+                        android:id="@+id/ratingBar_dialog_add_danhgia"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="wrap_content"
+                        android:scaleX="1"
+                        android:layout_gravity="left"
+                        android:scaleY="1"
+                        android:layout_height="120px"
+                        android:numStars="5"
+                        android:isIndicator="false"
+                        style="@android:style/Widget.Holo.RatingBar"
+                        android:backgroundTint="@color/blue_light1"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        app:cardCornerRadius="20dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@color/blue_light1">
+                        <Button
+                            android:id="@+id/btnNhanXet_detail_hotel"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:layout_gravity="left"
+                            android:gravity="center"
+                            android:text="Thêm nhận xét"
+                            android:backgroundTint="@color/blue_light1"
+                            android:backgroundTintMode="add"/>
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        app:cardCornerRadius="20dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@color/red">
+                        <Button
+                            android:id="@+id/btnCancel_detail_hotel"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:layout_gravity="right"
+                            android:gravity="center"
+                            android:text="Đóng"
+                            android:backgroundTint="@color/red"/>
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

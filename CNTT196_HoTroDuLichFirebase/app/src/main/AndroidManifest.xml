@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.cntt196_hotrodulichfirebase">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+<!--    android:icon="@mipmap/ic_launcher"-->
+<!--    android:roundIcon="@mipmap/ic_launcher"-->
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/intro2"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/intro2"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CNTT196_HoTroDuLichFirebase"
+        tools:targetApi="31">
+        <activity
+            android:name=".ActivityUpdateHotel"
+            android:exported="false" />
+        <activity
+            android:name=".SplashTheme"
+            android:exported="true"
+            android:theme="@style/ThemeSplash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ActivityUpdateTravel"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityDetailTravelAdmin"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityTravelAdmin"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityThongTinCaNhanUserAdmin"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityUserAdmin"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityDetailHotelAdmin"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityHotelAdmin"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityTrangCaNhan"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityGetStared"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyA2znm4Pa-8JNLf7djk3l8vk8AbZi7P9vA" />
+
+        <activity
+            android:name=".MapsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityNewHotel"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityNewTravel"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityDetailHotel"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityDetailTravel"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityRegister"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityLogin"
+            android:exported="false" />
+        <activity
+            android:name=".ActivitySearch"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivityAdmin"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+    </application>
+
+</manifest>

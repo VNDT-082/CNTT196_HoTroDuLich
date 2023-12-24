@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentHotel">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:id="@+id/linearLayout_fragmentHotel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="60dp">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/lvTinh_ver2_fragmentHotel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity= "left|center"
+            android:background="@color/blue_light1"/>
+
+        <LinearLayout
+            android:id="@+id/linearLayout_listTinh_fragmentHotel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/blue_light1">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/lvTinh_fragmentHotel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity= "left|center"
+                android:background="@color/blue_light1"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:text=""
+                android:background="@drawable/background_radius_bottom_listview_ver1"/>
+        </LinearLayout>
+
+
+        <ListView
+            android:id="@+id/listViewHotel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+
+
+</FrameLayout>

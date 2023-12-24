@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".FragmentThongTinCaNhan">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thông tin cá nhân"
+        android:layout_marginBottom="10dp"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/img_frg_trang_ca_nhan"
+                android:layout_width="200dp"
+                android:layout_height="250dp"
+                android:layout_gravity="center"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+
+                <Button
+                    android:id="@+id/buttonChonAnh_frg_trang_ca_nhan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Chọn ảnh"
+                    android:layout_marginRight="10dp"
+                    android:backgroundTint="@color/blue_light1"/>
+
+                <Button
+                    android:id="@+id/buttonCapNhatAnh_frg_trang_ca_nhan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Cập nhật ảnh"
+                    android:layout_marginLeft="10dp"
+                    android:backgroundTint="@color/red"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="10">
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/edtHoVaTen_frg_trang_ca_nhan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Họ và tên"
+                    android:layout_gravity="center"
+                    app:endIconMode="clear_text"
+                    android:textColorHint="@color/Gray21"
+                    app:hintTextColor="@color/blue_dark1"
+                    app:errorTextColor="@color/red"
+                    app:errorIconTint="@color/red"
+                    android:layout_marginTop="5dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="19dp"
+                        android:inputType="textPersonName"/>
+                </com.google.android.material.textfield.TextInputLayout>
+                <ImageButton
+                    android:id="@+id/imageButtonEdit_thong_tin_ca_nhan_frg_user"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@android:drawable/ic_menu_edit"
+                    android:layout_weight="9"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@android:color/transparent"/>
+            </LinearLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/edtEmail_frg_trang_ca_nhan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:layout_gravity="center"
+                app:endIconMode="clear_text"
+                android:textColorHint="@color/Gray21"
+                app:hintTextColor="@color/blue_dark1"
+                app:errorTextColor="@color/red"
+                app:errorIconTint="@color/red"
+                android:layout_marginTop="5dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="19dp"
+                    android:inputType="textEmailAddress"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tvNgaySinh_frg_trang_ca_nhan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ngày sinh"
+                android:layout_gravity="center"
+                app:endIconMode="clear_text"
+                android:textColorHint="@color/Gray21"
+                app:hintTextColor="@color/blue_dark1"
+                app:errorTextColor="@color/red"
+                app:errorIconTint="@color/red"
+                android:layout_marginTop="5dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="19dp"
+                    android:inputType="date"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:weightSum="6"
+                android:gravity="left|center"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp">
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="4"
+                    android:gravity="left|center"
+                    android:text="Giới tính:"
+                    android:textColor="@color/gray11"
+                    android:textSize="19dp" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_weight="2"
+                    android:weightSum="2">
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:orientation="horizontal"
+                        android:id="@+id/radioGroup">
+                        <RadioButton
+                            android:id="@+id/radioNam_frg_trang_ca_nhan"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Nam"
+                            android:checked="true"
+                            android:textColor="@color/gray11"
+                            android:textSize="19dp"/>
+
+                        <RadioButton
+                            android:id="@+id/radioNu_frg_trang_ca_nhan"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Nữ"
+                            android:textColor="@color/gray11"
+                            android:textSize="19dp"
+                            android:backgroundTint="@color/blue_light1"/>
+                    </RadioGroup>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:gravity="right|center"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_gravity="center">
+
+                <Button
+                    android:id="@+id/buttonCapNhat_frg_trang_ca_nhan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cập nhật thông tin"
+                    android:layout_marginLeft="10dp"
+                    android:backgroundTint="@color/red"
+                    android:layout_gravity="right"/>
+                <Button
+                    android:id="@+id/buttonDoiMatKhau_frg_trang_ca_nhan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Đổi mật khẩu"
+                    android:layout_marginLeft="10dp"
+                    android:backgroundTint="@color/red"
+                    android:layout_gravity="right"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

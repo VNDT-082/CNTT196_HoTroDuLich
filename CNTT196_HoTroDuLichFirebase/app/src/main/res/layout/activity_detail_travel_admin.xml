@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ActivityDetailTravelAdmin">
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="top">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:background="@color/blue_light1"
+            android:weightSum="10">
+            <ImageButton
+                android:id="@+id/btnBack_detail_travel_admin"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:layout_gravity="left"
+                android:layout_marginLeft="-15dp"
+                android:background="@color/blue_light1"
+                app:srcCompat="@drawable/baseline_keyboard_backspace_24"/>
+
+            <Button
+                android:id="@+id/btnDuyet_detail_travel_admin"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_weight="5"
+                android:layout_gravity="left"
+                android:layout_marginLeft="15dp"
+                android:backgroundTint="@color/CadetBlue1"
+                android:text="Duyệt"
+                android:textColor="@color/red"
+                android:textStyle="bold"/>
+            <Button
+                android:id="@+id/btnXoa_detail_travel_admin"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_weight="4"
+                android:layout_gravity="left"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="10dp"
+                android:backgroundTint="@color/red"
+                android:text="Xóa"
+                android:textColor="@color/white"
+                android:textStyle="bold"/>
+        </LinearLayout>
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+    <TextView
+        android:id="@+id/tvTrangThai_detail_travel_admin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Trạng thái:"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:textColor="@color/red"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:orientation="horizontal"
+                    android:weightSum="5">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        app:cardCornerRadius="30dp">
+                        <ImageView
+                            android:id="@+id/imgNguoiDung_detail_travel_admin"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/background_avarta"
+                            tools:srcCompat="@drawable/icon2" />
+                        <!--            android:background="@drawable/background_avarta"-->
+                    </androidx.cardview.widget.CardView>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tvTenNguoiDung_detail_travel_admin"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4"
+                            android:text="Ten nguoi dung"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvNgayDang_detail_travel_admin"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="ngay dang"
+                            android:textSize="15dp"
+                            android:layout_marginTop="-35dp"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tvTieuDe_detail_travel_admin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tieu de"
+                    android:textSize="18dp"/>
+
+                <ImageView
+                    android:id="@+id/imgHinhAnhBaiDang_detail_travel_admin"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    app:srcCompat="@drawable/default_image_empty" />
+
+
+                <!--            <LinearLayout-->
+                <!--                android:layout_width="match_parent"-->
+                <!--                android:layout_height="match_parent"-->
+                <!--                android:orientation="horizontal"></LinearLayout>-->
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recylistHinhAnh_detail_travel_admin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"/>
+
+                <TextView
+                    android:id="@+id/tvMoTa_detail_travel_admin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="mo ta"
+                    android:textSize="16dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="9">
+                    <ImageView
+                        android:id="@+id/imageView5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/baseline_location_on_24" />
+
+                    <TextView
+                        android:id="@+id/tvDiaChi_detail_travel_admin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="8"
+                        android:text="Dia chi"
+                        android:textSize="16dp"
+                        android:textStyle="bold|italic"/>
+                </LinearLayout>
+
+
+                <!--                <ImageButton-->
+                <!--                    android:id="@+id/btnShowMap_detail_travel_admin"-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:backgroundTint="@color/blue_light1"-->
+                <!--                    app:srcCompat="@android:drawable/ic_dialog_map" />-->
+
+                <TextView
+                    android:id="@+id/tvGia_detail_travel_admin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Chi phi"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/red"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

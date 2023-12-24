@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:background="@drawable/boder">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="7"
+            android:background="@drawable/boder">
+
+            <TextView
+                android:layout_width="30dp"
+                android:layout_height="50dp"
+                android:text="Số giường:"
+                android:layout_gravity="center"
+                android:gravity="center|left"
+                android:layout_weight="3"
+                android:textSize="15dp"/>
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:orientation="horizontal">
+                    <RadioButton
+                        android:id="@+id/radioButtonKhongXacDinh_dialog_them_phong"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Không xác định" />
+                    <RadioButton
+                        android:id="@+id/radioButton1Giuong_dialog_them_phong"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="1 giường" />
+                    <RadioButton
+                        android:id="@+id/radioButton2Giuong_dialog_them_phong"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="2 giường" />
+
+            </RadioGroup>
+<!--            <EditText-->
+<!--                android:id="@+id/edtSoGiuong_New_Phong"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="4"-->
+<!--                android:ems="10"-->
+<!--                android:inputType="number"-->
+<!--                android:background="@drawable/boder"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:hint="Nhập ở đây..."-->
+<!--                android:textColorHint="@color/Silver"-->
+<!--                android:textAlignment="viewEnd"-->
+<!--                android:paddingRight="20dp"-->
+<!--                android:text="0" />-->
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/boder"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="Chi phí tham khảo"
+                android:layout_gravity="left"
+                android:gravity="center|left"
+                android:textSize="15dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-15dp"
+                android:text="(Đơn vị tính VNĐ, không xác định hãy nhập 0)"
+                android:layout_gravity="left"
+                android:gravity="center|left"
+                android:textSize="10dp"
+                android:textColor="@color/red"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:text="Giá từ:"
+                    android:layout_gravity="center"
+                    android:gravity="center|left"
+                    android:layout_weight="2"
+                    android:textSize="15dp"/>
+
+                <EditText
+                    android:id="@+id/edtGiaMin_New_Phong"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    android:background="@drawable/boder"
+                    android:layout_gravity="center"
+                    android:hint="Nhập ở đây..."
+                    android:textColorHint="@color/Silver"
+                    android:text=""
+                    android:textColor="@color/red"/>
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:text="đến"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_weight="2"
+                    android:textSize="15dp"/>
+
+                <EditText
+                    android:id="@+id/edtGiaMax_New_Phong"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    android:background="@drawable/boder"
+                    android:layout_gravity="center"
+                    android:hint="Nhập ở đây..."
+                    android:textColorHint="@color/Silver"
+                    android:text=""
+                    android:textColor="@color/red"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/boder"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="Hình ảnh"
+                android:layout_gravity="left"
+                android:gravity="center|left"
+                android:textSize="15dp"/>
+            <ImageView
+                android:id="@+id/ImagePhong_New_Hotel"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:src="@drawable/default_image_empty" />
+            <Button
+                android:id="@+id/btnChonAnhPhong_New_Hotel"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:text="Chọn ảnh"
+                android:layout_gravity="right"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <Button
+                android:id="@+id/btnThemPhong_New_Hotel"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:text="Thêm phòng"
+                android:layout_gravity="right"
+                android:layout_marginRight="5dp"
+                android:backgroundTint="@color/blue_light1"/>
+            <Button
+                android:id="@+id/btnDong_New_Hotel"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:text="Đóng"
+                android:layout_gravity="right"
+                android:layout_marginLeft="5dp"
+                android:backgroundTint="@color/red"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
